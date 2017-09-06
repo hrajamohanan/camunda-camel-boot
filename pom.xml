@@ -3,6 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+
+
 	<groupId>de.unioninvestment</groupId>
 	<artifactId>camunda-camel-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -22,8 +24,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<camunda-spring-boot.version>2.2.0</camunda-spring-boot.version>
+		<camunda-spring-boot.version>2.3.0-SNAPSHOT</camunda-spring-boot.version>
 		<camel.version>2.19.2</camel.version>
+		<camunda.version>7.7.0</camunda.version>
 	</properties>
 
 	<dependencies>
@@ -47,11 +50,12 @@
 		<dependency>
 			<groupId>org.camunda.bpm.extension.springboot</groupId>
 			<artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
+			<version>${camunda-spring-boot.version}</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.camunda.bpm.extension.camel</groupId>
 		    <artifactId>camunda-bpm-camel-spring</artifactId>
-		    <version>0.5</version>
+		    <version>0.6-SNAPSHOT</version>
 		</dependency>
 		
 		
@@ -63,6 +67,8 @@
 		</dependency>
 	</dependencies>
 	
+	
+	<!--  
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -75,13 +81,18 @@
 		</dependencies>
 
 	</dependencyManagement>
-	
+	-->
 	<repositories>
 		<repository>
 			<id>camunda-bpm-nexus</id>
 			<name>camunda-bpm-nexus</name>
 			<url>https://app.camunda.com/nexus/content/groups/public</url>
 		</repository>
+		 <repository>
+      <id>camunda-nexus</id>
+      <name>camunda bpm community extensions snapshots</name>
+      <url>https://app.camunda.com/nexus/content/repositories/camunda-bpm-community-extensions-snapshots</url>
+    </repository>
 	</repositories>
 
 

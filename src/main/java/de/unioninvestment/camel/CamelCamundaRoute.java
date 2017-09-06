@@ -18,7 +18,8 @@ public class CamelCamundaRoute extends RouteBuilder{
 
 		
 		
-		from("direct://2camel")
+		from("direct:2camel")
+		.routeId("2camel") //
 		.id("2camel")
 		.to("log:camunda_bpmn_called_camel_route");
 

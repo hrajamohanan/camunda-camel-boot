@@ -18,7 +18,7 @@
     <bpmn:scriptTask id="Service2Camel" name="Service2Camel">
       <bpmn:incoming>SequenceFlow_18eh5ql</bpmn:incoming>
       <bpmn:outgoing>SequenceFlow_0zjrsll</bpmn:outgoing>
-      <bpmn:script><![CDATA[${camel.sendTo('2camel')}]]></bpmn:script>
+      <bpmn:script><![CDATA[${camel.sendTo('direct:2camel')}]]></bpmn:script>
     </bpmn:scriptTask>
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
