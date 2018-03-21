@@ -1,4 +1,4 @@
-package de.unioninvestment;
+package org.wipro.saga.application;
 
 
 import org.apache.camel.CamelContext;

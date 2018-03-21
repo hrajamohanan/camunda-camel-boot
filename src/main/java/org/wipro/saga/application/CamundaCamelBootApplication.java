@@ -1,4 +1,4 @@
-package de.unioninvestment;
+package org.wipro.saga.application;
 
 import org.camunda.bpm.spring.boot.starter.annotation.EnableProcessApplication;
 import org.springframework.boot.SpringApplication;

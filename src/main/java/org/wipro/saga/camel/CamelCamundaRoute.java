@@ -1,4 +1,4 @@
-package de.unioninvestment.camel;
+package org.wipro.saga.camel;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
