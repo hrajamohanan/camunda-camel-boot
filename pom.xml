@@ -24,7 +24,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<camunda-spring-boot.version>2.3.0-SNAPSHOT</camunda-spring-boot.version>
+		<camunda-spring-boot.version>2.1.2</camunda-spring-boot.version>
 		<camel.version>2.19.2</camel.version>
 		<camunda.version>7.9.0-SNAPSHOT</camunda.version>
 	</properties>
