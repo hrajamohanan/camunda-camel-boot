@@ -27,6 +27,9 @@ Make changes to application.properties and the following properties will need mo
 
 
 The dashboard can be accessed at localhost:8080
+
 username: admin
+
 password : admin 
+
 (need to be changed if to be used in production)
